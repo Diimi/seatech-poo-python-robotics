@@ -3,6 +3,7 @@ class Human():
 
     _sexe='<unknown>'
     _mon_estomac = []
+    _danser = "N"
     
     
 
@@ -33,6 +34,14 @@ class Human():
                 time.sleep(2)
             else :
                 print("Erreur,le cyborg a trop mangé...")
+        
+    def fun(self):
+        self.danser = input("Veux tu danser (O/N):  ")
+        if(self.danser == "O" and len(self._mon_estomac)<=4):
+            print("Let's dance!!!!!")
+        else:
+            print ("je préfère me reposer")
+
        
     @property
     def sexe(self):
