@@ -1,3 +1,8 @@
+from robot import Robot
+from human import Human
+
+
+
 class Robot():
     # Robot class content here
     pass
