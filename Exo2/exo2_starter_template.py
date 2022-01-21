@@ -1,15 +1,7 @@
 from robot import Robot
-from human import Human
+from human import Human 
 
 
-
-class Robot():
-    # Robot class content here
-    pass
-
-class Human():   
-    # Human class content here
-    pass
 
 class Cyborg(Robot, Human):   
 
@@ -21,9 +13,10 @@ class Cyborg(Robot, Human):
 cyborg = Cyborg('Deux Ex Machina', 'M')
 
 print(cyborg.name, 'sexe', cyborg.sexe)
-print('Charging battery...')
-cyborg.charge()
+"print('Charging battery...')"
+"cyborg.charge()"
 cyborg.status()
-cyborg.eat('banana')
-cyborg.eat(['coca', 'chips'])
+cyborg.eat('Chips')
+cyborg.eat(['Coca', 'Pizza'])
+cyborg.eat(['Glace'])
 cyborg.digest()
