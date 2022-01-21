@@ -10,13 +10,11 @@ class Cyborg(Robot, Human):
         Human.__init__(self, sexe)
 
 
-cyborg = Cyborg('Deux Ex Machina', 'M')
+cyborg = Cyborg('Robocop', 'Homme')
 
 print(cyborg.name, 'sexe', cyborg.sexe)
-"print('Charging battery...')"
-"cyborg.charge()"
+print('Charging battery...')
+cyborg.charge()
 cyborg.status()
-cyborg.eat('Chips')
-cyborg.eat(['Coca', 'Pizza'])
-cyborg.eat(['Glace'])
+cyborg.eat(['Chips', 'Pizza','Glace','Coca'])
 cyborg.digest()
